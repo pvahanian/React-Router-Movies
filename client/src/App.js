@@ -39,11 +39,12 @@ export default function App () {
     <div>
       <SavedList list={[ /* This is stretch */]} />
       <Switch>
-      <Route path='/Movies/:id'>
-        <Movie  />
-      </Route>
+      
       <Route path='/'>
         <MovieList movies={movieList} />
+      </Route>
+      <Route path='/Movies/:id'>
+        <Movie  />
       </Route>
       </Switch>  
       </div>
